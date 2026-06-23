@@ -1,0 +1,169 @@
+/* AKU Digital Library - Professional Stylesheet - BACKUP COPY */
+
+/* CSS Variables */
+:root {
+    --primary-color: #1e293b;
+    --secondary-color: #3b82f6;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --warning-color: #f59e0b;
+    --info-color: #06b6d4;
+    --light-gray: #f8fafc;
+    --medium-gray: #64748b;
+    --dark-gray: #334155;
+    --border-radius: 0.5rem;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    background-color: var(--light-gray);
+}
+
+/* Header Styles */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-gray)) !important;
+    box-shadow: var(--shadow);
+    padding: 0.5rem 0;
+    min-height: 60px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white !important;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem !important;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.aku-logo-img {
+    height: 42px;
+    width: 42px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Button Styles */
+.btn {
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: var(--transition);
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-aku {
+    background-color: #f59e0b !important;
+    border-color: #f59e0b !important;
+    color: white !important;
+    box-shadow: 0 4px 14px 0 rgba(245, 158, 11, 0.39);
+}
+
+.btn-aku:hover {
+    background-color: #d97706 !important;
+    border-color: #d97706 !important;
+    color: white !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px 0 rgba(245, 158, 11, 0.5);
+}
+
+/* Continue with rest of CSS... */
+/* Updated Homepage Hero Section - Gray Theme */
+.hero-section {
+    background: 
+        linear-gradient(135deg, rgba(71, 85, 105, 0.95), rgba(51, 65, 85, 0.95)),
+        radial-gradient(circle at 20% 80%, rgba(148, 163, 184, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(100, 116, 139, 0.2) 0%, transparent 50%);
+    background-size: cover, 600px 600px, 400px 400px, 800px 800px;
+    background-position: center, top left, top right, center;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px, 30px 30px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+/* Dashboard Welcome Card Text Visibility Fix */
+.welcome-card {
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-gray));
+    color: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+}
+
+.welcome-card h2 {
+    color: white !important;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-card p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-card * {
+    color: white !important;
+}
+
+.current-date {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.current-time {
+    color: white !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+/* Updated Dashboard Welcome Card - Blue Theme */
+.welcome-card {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.2);
+}
+
+/* Homepage Background Pattern */
+body {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="subtle-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse"><rect width="100" height="100" fill="none"/><g opacity="0.02" fill="%23475569"><circle cx="20" cy="20" r="1"/><circle cx="80" cy="80" r="1"/><circle cx="50" cy="50" r="0.5"/></g></pattern></defs><rect width="1000" height="1000" fill="url(%23subtle-pattern)"/></svg>');
+    background-size: 200px 200px;
+}
